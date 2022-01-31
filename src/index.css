@@ -1,8 +1,17 @@
+@font-face {
+  font-family: 'D2Coding';
+  font-style: normal;
+  font-weight: 400;
+  src: url("styles/fonts/D2Coding.woff2") format('woff2'),
+       url("styles/fonts/D2Coding.woff") format('woff');
+}
+
 :root {
   --noto-sans: "Noto Sans", sans-serif;
   --noto-sans-kr: "Noto Sans KR", sans-serif;
   --source-sans: "Source Sans Pro", sans-serif;
   --outfit: "Open Sans", sans-serif;
+  --d2-coding: "D2Coding", sans-serif;
 
   --light-border: #f2f2f2;
   --border: #ededed;
@@ -31,6 +40,13 @@
   --dark-mode-shade: #191c21;
   --dark-mode-card: #3b3a3d;
 
+  --bash-bg: #2b303b;
+  --bash-status-bg: #dbdadc;
+  --bash-tab-bg: #515151;
+  --bash-close: #f05c56;
+  --bash-min: #fbbc30;
+  --bash-max: #64cb43;
+
   --spinner-color: #b3b3b3;
 }
 
@@ -44,6 +60,8 @@
 html {
   font-size: 62.5%;
   font-family: var(--source-sans);
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 }
 
 button {
@@ -51,4 +69,11 @@ button {
   outline: none;
   border: none;
   cursor: pointer;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
