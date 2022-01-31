@@ -64,6 +64,17 @@
     color: #a1cfff;
 }
 
+.home__about .web-only {
+    display: none;
+}
+
+.home__about .mobile-only {
+    display: block;
+    font-size: 3rem;
+    font-family: var(--source-sans);
+    font-weight: 900;
+}
+
 .command-line {
     margin-top: 0.5rem;
     display: flex;
@@ -90,4 +101,14 @@
 
 .command-line__location {
     padding-right: 1.3rem;
+}
+
+@media only screen and (min-width: 400px) {
+    .home__about .web-only {
+        display: block;
+    }
+    
+    .home__about .mobile-only {
+        display: none;
+    }
 }
