@@ -10,10 +10,10 @@ const Footer = () => {
         <div className="footer">
             <p>© 2022 Alt. All rights reserved. Email: alt.algotrader@gmail.com</p>
             <p>
-                <a href="https://blog.naver.com/ppark9553" target="_blank">
+                <a href="https://blog.naver.com/ppark9553" target="_blank" rel="noreferrer">
                     <Naver />
                 </a>
-                <a href="https://github.com/alt-algotrader" target="_blank">
+                <a href="https://github.com/alt-algotrader" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
             </p>
