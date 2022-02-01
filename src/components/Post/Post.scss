@@ -1,0 +1,27 @@
+.post-wrapper {
+    color: black;
+}
+
+.post-wrapper__action {
+    margin-bottom: 2.3rem;
+}
+
+.post-wrapper__action a {
+    font-family: var(--outfit);
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--light-blue);
+    cursor: pointer;
+}
+
+.post-wrapper__action a:hover {
+    color: var(--main-blue);
+}
+
+.post-wrapper__content {
+    margin-bottom: 5rem;
+}
+
+.post-wrapper .footer a:nth-child(2) {
+    color: var(--bash-tab-bg);;
+}

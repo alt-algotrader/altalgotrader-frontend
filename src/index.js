@@ -11,7 +11,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/*" element={<BlogPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
