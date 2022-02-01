@@ -31,9 +31,11 @@
     width: 2.8rem;
     height: 2.8rem;
     // fill: #03c75a;
+    fill: var(--bash-tab-bg);
 }
 
 .footer a:nth-child(2) svg {
     width: 2.7rem;
     height: 2.7rem;
+    margin-top: -0.2rem;
 }
