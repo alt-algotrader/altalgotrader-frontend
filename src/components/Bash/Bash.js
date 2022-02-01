@@ -3,7 +3,7 @@ import './Bash.scss';
 import { Link } from 'react-router-dom';
 
 const Bash = ({ children, colorMode }) => {
-    const containerClass = (colorMode == 'dark') ? 'bash__container dark' : 'bash__container light';
+    const containerClass = (colorMode === 'dark') ? 'bash__container dark' : 'bash__container light';
 
     return (
         <div className={containerClass}>
