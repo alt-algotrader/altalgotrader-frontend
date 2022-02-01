@@ -1,6 +1,8 @@
 import React from 'react';
 import './Home.scss';
+import { Link } from 'react-router-dom';
 import Plot from 'react-plotly.js';
+import { Footer } from '../Footer';
 
 const Home = () => {
     const now = new Date();
@@ -14,6 +16,8 @@ const Home = () => {
             <Banner />
             <CommandLine emoji={'🌈'} location={'~'} command={'about'} />
             <About />
+            <CommandLine emoji={'🦄'} location={'~'} command={'team'} />
+            <Footer />
         </div>
     );
 };
@@ -105,21 +109,23 @@ const About = () => {
     return (
         <>
             <div className="home__about">
-                <div className="home__about--selection">
-                    <div className="home__about--selection-title web-only">
-                        <p> ___  __    __    __ </p>
-                        <p>(  ,)(  )  /  \  / _)</p>
-                        <p> ) ,\ )(__( () )( (/\</p>
-                        <p>(___/(____)\__/  \__/</p>
+                <Link to="/blog">
+                    <div className="home__about--selection">
+                        <div className="home__about--selection-title web-only">
+                            <p> ___  __    __    __ </p>
+                            <p>(  ,)(  )  /  \  / _)</p>
+                            <p> ) ,\ )(__( () )( (/\</p>
+                            <p>(___/(____)\__/  \__/</p>
+                        </div>
+                        <div className="home__about--selection-title mobile-only">
+                            BLOG
+                        </div>
+                        <div className="home__about--selection-description">
+                            <p>알고리즘 트레이딩에 관련된 블로그글을 작성하여 올리고 있습니다.</p>
+                            <p>관련 분야에 관심있는 다양한 분들을 만나기 위해 글 작성을 시작하였습니다.</p>
+                        </div>
                     </div>
-                    <div className="home__about--selection-title mobile-only">
-                        BLOG
-                    </div>
-                    <div className="home__about--selection-description">
-                        <p>알고리즘 트레이딩에 관련된 블로그글을 작성하여 올리고 있습니다.</p>
-                        <p>관련 분야에 관심있는 다양한 분들을 만나기 위해 글 작성을 시작하였습니다.</p>
-                    </div>
-                </div>
+                </Link>
                 <div className="home__about--selection">
                     <div className="home__about--selection-title web-only">
                         <p> ___   __  ____  __  </p>
@@ -150,6 +156,7 @@ const About = () => {
                         <p>실제 트레이딩에 사용중인 전략부터 리서치 전략까지 모두 소개드리겠습니다.</p>
                     </div>
                 </div>
+                <br />
             </div>
         </>
     );

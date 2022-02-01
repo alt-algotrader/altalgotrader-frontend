@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-.navbar--logo {
+.navbar__logo {
     width: 5rem;
     text-align: center;
     color: white;
@@ -17,10 +17,22 @@
     cursor: pointer;
 }
 
-.navbar--buttons {
-
+.navbar__buttons {
+    display: flex;
+    align-items: center;
 }
 
-.navbar--states {
+.navbar__buttons--btn {
+    color: white;
+    font-family: var(--noto-sans);
+    font-size: 1.3rem;
+    padding: 0 1rem;
+    height: 2.8rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar__states {
 
 }

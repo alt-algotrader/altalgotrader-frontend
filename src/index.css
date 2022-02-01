@@ -71,6 +71,12 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
+
 .main {
   display: flex;
   flex-direction: column;
