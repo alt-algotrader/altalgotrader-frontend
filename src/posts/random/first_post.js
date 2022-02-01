@@ -1,10 +1,16 @@
-import { H1, P } from '../template';
+import { H1, P, Code } from '../template';
 
-const post = (<div>
+const code1 = `import React from 'react';
+
+console.log(React);
+`;
+
+const post = (<>
 <H1 text={'인사드립니다'} />
 <P text={'안녕하세요? 알고리즘 트레이딩 관련 블로그글을 작성하고 있는 알트입니다.'} />
 <P text={'알고리즘 트레이딩을 수년간 해오다 더 다양한 사람과 방법론을 접하고 싶어서 블로그 작성을 시작하게 되었습니다.'} />
-</div>);
+<Code language={'javascript'} code={code1} />
+</>);
 
 const first_post = {
     category: 'random',
