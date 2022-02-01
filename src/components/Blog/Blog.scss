@@ -1,0 +1,45 @@
+.blog {
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.blog__list {
+    margin: 1.5rem 0;
+}
+
+.blog__list--title {
+    padding: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.blog__list--category {
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.blog__list--category:hover {
+    background: var(--light-blue);
+}
+
+.blog__list--category div {
+    margin-left: 1rem;
+    background: var(--main-pink);
+    border-radius: 5px;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.command-line__wrapper {
+    color: white;
+}
+
+.blog .footer a:nth-child(2) {
+    color: var(--bash-tab-bg);;
+}

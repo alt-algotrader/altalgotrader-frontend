@@ -17,7 +17,7 @@ const HomePage = () => {
     return (
         <div className="main">
             <Navbar />
-            <Bash children={children} />
+            <Bash children={children} colorMode={'dark'} />
         </div>
     );
 };

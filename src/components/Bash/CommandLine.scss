@@ -1,0 +1,27 @@
+.command-line {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.command-line__wrapper {
+    display: flex;
+    align-items: center;
+    background: var(--dark-tone);
+    border-radius: 0 15px 15px 0;
+    padding-left: 0.4rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.command-line__wrapper:hover {
+    background: var(--dark-tone-shade);
+}
+
+.command-line__emoji {
+    padding: 0 1rem;
+}
+
+.command-line__location {
+    padding-right: 1.3rem;
+}

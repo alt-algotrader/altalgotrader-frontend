@@ -1,12 +1,17 @@
 import React from 'react';
 import './Bash.scss';
+import { Link } from 'react-router-dom';
 
-const Bash = ({ children }) => {
+const Bash = ({ children, colorMode }) => {
+    const containerClass = (colorMode == 'dark') ? 'bash__container dark' : 'bash__container light';
+
     return (
-        <div className="bash__container">
+        <div className={containerClass}>
             <div className="bash__container--status">
                 <div className="bash__container--buttons">
-                    <div className="bash__container--button bash__container--button-close"></div>
+                    <Link to="/">
+                        <div className="bash__container--button bash__container--button-close"></div>
+                    </Link>
                     <div className="bash__container--button bash__container--button-min"></div>
                     <div className="bash__container--button bash__container--button-max"></div>
                 </div>

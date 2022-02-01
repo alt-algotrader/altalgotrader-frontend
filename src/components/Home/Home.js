@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.scss';
 import { Link } from 'react-router-dom';
 import Plot from 'react-plotly.js';
+import { CommandLine } from '../Bash';
 import { Footer } from '../Footer';
 
 const Home = () => {
@@ -18,19 +19,6 @@ const Home = () => {
             <About />
             <CommandLine emoji={'🦄'} location={'~'} command={'team'} />
             <Footer />
-        </div>
-    );
-};
-
-const CommandLine = ({ emoji, location, command }) => {
-    return (
-        <div className="command-line">
-            <div className="command-line__wrapper">
-                <div className="command-line__user">{'{alt-algotrader}'}</div>
-                <div className="command-line__emoji">{emoji}</div>
-                <div className="command-line__location">{location}</div>
-            </div>
-            <div className="command-line__command">{command}</div>
         </div>
     );
 };
