@@ -11,7 +11,7 @@ const Post = ({ post }) => {
         <div className="post-wrapper">
             <div className="post-wrapper__action">
                 <Link to="/blog">
-                    <FontAwesomeIcon icon={faChevronLeft} /> Go Back
+                    [<FontAwesomeIcon icon={faChevronLeft} />] Go Back
                 </Link>
             </div>
             <div className="post-wrapper__content">

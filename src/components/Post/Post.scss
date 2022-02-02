@@ -8,12 +8,11 @@
 }
 
 .post-wrapper__action a {
-    font-size: 1.3rem;
     cursor: pointer;
-    background: var(--bash-status-bg);
-    color: var(--dark-tone);
-    padding: 0.4rem 0.8rem;
-    border-radius: 10px 0 0 10px;
+}
+
+.post-wrapper__action a:hover {
+    color: var(--bash-tab-bg);
 }
 
 .post-wrapper__content {
